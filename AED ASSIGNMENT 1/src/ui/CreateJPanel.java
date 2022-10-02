@@ -5,7 +5,8 @@
 package ui;
 
 import javax.swing.JOptionPane;
-import model.Product;
+import model.Employee;
+import model.EmployeeDirectory;
 
 
 public class CreateJPanel extends javax.swing.JPanel {
@@ -13,11 +14,14 @@ public class CreateJPanel extends javax.swing.JPanel {
     /**
      * Creates new form CreateJPanel
      */
-    Product product;
+    Employee employee;
+    EmployeeDirectory directory;
     
-    public CreateJPanel(Product product) {
+    
+    public CreateJPanel(Employee employee,EmployeeDirectory directory) {
         initComponents();
-        this.product = product;
+        this.employee = employee;
+        this.directory = directory;
         
     }
 
@@ -87,6 +91,12 @@ public class CreateJPanel extends javax.swing.JPanel {
             }
         });
 
+        txtGender.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtGenderActionPerformed(evt);
+            }
+        });
+
         btnSave.setText("SAVE");
         btnSave.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -113,7 +123,7 @@ public class CreateJPanel extends javax.swing.JPanel {
                             .addComponent(lblPosition_title)
                             .addComponent(lblContact_Info)
                             .addComponent(lblPhoto))
-                        .addGap(289, 327, Short.MAX_VALUE)
+                        .addGap(289, 306, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addComponent(txtTeam_info, javax.swing.GroupLayout.PREFERRED_SIZE, 262, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -140,12 +150,12 @@ public class CreateJPanel extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(322, 322, 322)
+                        .addGap(332, 332, 332)
                         .addComponent(btnSave))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(303, 303, 303)
+                        .addGap(302, 302, 302)
                         .addComponent(lblTitle)))
-                .addContainerGap(364, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {txtAge, txtCell_phone_number, txtEmployee_ID, txtGender, txtLevel, txtName, txtPosition_title, txtStart_date, txtTeam_info, txtemail_address});
@@ -153,9 +163,9 @@ public class CreateJPanel extends javax.swing.JPanel {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(27, 27, 27)
+                .addContainerGap()
                 .addComponent(lblTitle)
-                .addGap(18, 18, 18)
+                .addGap(39, 39, 39)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txtName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblName))
@@ -179,7 +189,7 @@ public class CreateJPanel extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txtLevel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblLevel))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 30, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 14, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txtTeam_info, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblTeam_info))
@@ -189,7 +199,7 @@ public class CreateJPanel extends javax.swing.JPanel {
                     .addComponent(lblPosition_title))
                 .addGap(18, 18, 18)
                 .addComponent(lblContact_Info)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 14, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblCell_phone_number)
                     .addComponent(txtCell_phone_number, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -199,9 +209,9 @@ public class CreateJPanel extends javax.swing.JPanel {
                     .addComponent(txtemail_address, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(36, 36, 36)
                 .addComponent(lblPhoto)
-                .addGap(17, 17, 17)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(btnSave)
-                .addGap(61, 61, 61))
+                .addGap(66, 66, 66))
         );
 
         layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {txtAge, txtCell_phone_number, txtEmployee_ID, txtGender, txtLevel, txtName, txtPosition_title, txtStart_date, txtTeam_info, txtemail_address});
@@ -215,20 +225,51 @@ public class CreateJPanel extends javax.swing.JPanel {
     private void btnSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSaveActionPerformed
         // TODO add your handling code here:
         
-        product.setName(txtName.getText());
-        product.setEmployee_ID(txtEmployee_ID.getText());
-        product.setAge(Integer.parseInt(txtAge.getText()));
-        product.setGender(txtGender.getText());
-        product.setStart_date(txtStart_date.getText());
-        product.setLevel(txtLevel.getText());
-        product.setTeam_info(txtTeam_info.getText());
-        product.setPosition_title(txtPosition_title.getText());
-        product.setCell_phone_number(Integer.parseInt(txtCell_phone_number.getText()));
-        product.setEmail_address(txtemail_address.getText());
+        employee.setName(txtName.getText());
+        employee.setEmployee_ID(Integer.parseInt(txtEmployee_ID.getText()));
+        employee.setAge(Integer.parseInt(txtAge.getText()));
+        employee.setGender(txtGender.getText());
+        employee.setStart_date(txtStart_date.getText());
+        employee.setLevel(txtLevel.getText());
+        employee.setTeam_info(txtTeam_info.getText());
+        employee.setPosition_title(txtPosition_title.getText());
+        employee.setCell_phone_number(Integer.parseInt(txtCell_phone_number.getText()));
+        employee.setEmail_address(txtemail_address.getText());
         
+       
+       
+       Employee emp = directory.addNewEmployees();
+       
+       String name =txtName.getText();
+       int employee_id =Integer.parseInt(txtEmployee_ID.getText());
+       int age =Integer.parseInt(txtAge.getText());
+       String gender =txtGender.getText();
+       String start_date =txtStart_date.getText();
+       String level =txtLevel.getText();
+       String team_info =txtTeam_info.getText();
+       String position_title =txtPosition_title.getText();
+       int cell_phone_number =Integer.parseInt(txtCell_phone_number.getText());
+       String emailaddress =txtemail_address.getText();
+       
+       emp.setName(name);
+       emp.setEmployee_ID(employee_id);
+       emp.setAge(age);
+       emp.setGender(gender);
+       emp.setStart_date(start_date);
+       emp.setLevel(level);
+       emp.setTeam_info(team_info);
+       emp.setPosition_title(position_title);
+       emp.setCell_phone_number(cell_phone_number);
+       emp.setEmail_address(emailaddress);
+       
        JOptionPane.showMessageDialog(this, "DETAILS ARE SAVED!");
+            
         
     }//GEN-LAST:event_btnSaveActionPerformed
+
+    private void txtGenderActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtGenderActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtGenderActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
