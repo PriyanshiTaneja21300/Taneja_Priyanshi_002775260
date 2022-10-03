@@ -399,6 +399,9 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="txtSearchStartDate">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtSearchStartDateActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="SearchCellPhoneNumber">
       <Properties>

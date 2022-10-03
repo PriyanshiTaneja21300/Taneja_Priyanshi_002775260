@@ -158,6 +158,12 @@ public class SearchJPanel extends javax.swing.JPanel {
         SearchTeamInfo.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         SearchTeamInfo.setText("Search Team Info :");
 
+        txtSearchStartDate.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtSearchStartDateActionPerformed(evt);
+            }
+        });
+
         SearchCellPhoneNumber.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
         SearchCellPhoneNumber.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         SearchCellPhoneNumber.setText("Search Cell Phone No. :");
@@ -603,7 +609,7 @@ public class SearchJPanel extends javax.swing.JPanel {
        int count =0;
        for(Employee employee : directory.getDirectory()){
 
-        if(employee.getEmployee_ID()==(employee_id)){
+        if(employee.getEmployee_ID().equals(employee_id)){
             count++;
             Object[] row = new Object[10];
              row[0]= employee;
@@ -718,6 +724,10 @@ public class SearchJPanel extends javax.swing.JPanel {
         }
         
     }//GEN-LAST:event_btnSearchEmailAddressActionPerformed
+
+    private void txtSearchStartDateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtSearchStartDateActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtSearchStartDateActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

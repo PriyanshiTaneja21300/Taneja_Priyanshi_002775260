@@ -5,7 +5,7 @@ package model;
 public class Employee {
     
     private String Name; 
-    private int Employee_ID;
+    private String Employee_ID;
     private int  Age;
     private String Gender;
     private String Start_date;
@@ -15,6 +15,13 @@ public class Employee {
    // private int Contact_Info;
     private int Cell_phone_number;
     private String email_address;
+    private String photo;
+    
+
+    
+
+   
+    
 
     public String getName() {
         return Name;
@@ -24,13 +31,15 @@ public class Employee {
         this.Name = Name;
     }
 
-    public int getEmployee_ID() {
+    public String getEmployee_ID() {
         return Employee_ID;
     }
 
-    public void setEmployee_ID(int Employee_ID) {
+    public void setEmployee_ID(String Employee_ID) {
         this.Employee_ID = Employee_ID;
     }
+
+    
 
     public int getAge() {
         return Age;
@@ -107,6 +116,18 @@ public class Employee {
     @Override
     public String toString(){
         return Name;
+    }
+
+    
+
+    public String getPhoto() {
+        return photo;
+      //throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+   public void setPhoto(String Photo) {
+       this.photo =photo;
+        //throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
     
     
