@@ -8,6 +8,19 @@ package Hospital_Management;
  *
  * @author SHREYA TANEJA
  */
-public class Doctor {
+public class Doctor extends Person {
     
+    public static int DOCTOR_ID = 5000;
+    
+    public Person personDetails;
+     public Appointment_History allAppointmentsHistory;
+     public Doctor_Details doctorDetails;
+     public int doctorIdentifier;
+     
+     public Doctor() {
+         allAppointmentsHistory = new Appointment_History();
+     
+     
+     }                  
+              
 }

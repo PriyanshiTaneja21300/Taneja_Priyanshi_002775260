@@ -13,13 +13,13 @@ import java.util.Date;
  *
  * @author SHREYA TANEJA
  */
-public class Encounter {
+public class Appointment {
 
     public Date visitDate;
-    public Vital_Signs findings;
+    public Doctor_Details findings;
 
-    public Encounter() {
-        findings = new Vital_Signs();
+    public Appointment() {
+        findings = new Doctor_Details();
     }
 
     public String validateVisitDate(String date) {
@@ -47,4 +47,3 @@ public class Encounter {
         return isValid;
     }
 }
-

@@ -4,10 +4,12 @@
  */
 package Hospital_Management;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author SHREYA TANEJA
  */
-public class Hospital {
-    
+public class Appointment_History {
+    public ArrayList<Appointment> AppointmentHistory = new ArrayList<>();
 }
