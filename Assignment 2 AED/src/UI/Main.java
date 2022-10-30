@@ -243,7 +243,8 @@ public class Main extends javax.swing.JFrame {
                     Left_Side adminOptions = new Left_Side(jSplitPane1, jPanel2, jPanel1);
                     //jSplitPane.setRightComponent(adminDashboard);
                    jSplitPane1.setLeftComponent(adminOptions);
-                   
+                   ADD_COMMUNITY adminDashboard = new ADD_COMMUNITY();
+                   jSplitPane1.setRightComponent(adminDashboard);
                    LOGOUT_BUTTON.setVisible(true);
                 }
             }
