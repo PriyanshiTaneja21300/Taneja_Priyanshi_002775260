@@ -91,6 +91,8 @@ public class ADD_DOCTOR extends javax.swing.JPanel {
         specializationField = new javax.swing.JTextField();
         experienceField = new javax.swing.JTextField();
 
+        setBackground(new java.awt.Color(153, 204, 255));
+
         searchNameField.setBackground(new java.awt.Color(238, 238, 238));
         searchNameField.setHorizontalAlignment(javax.swing.JTextField.LEFT);
         searchNameField.setToolTipText("Click to enter your name.");

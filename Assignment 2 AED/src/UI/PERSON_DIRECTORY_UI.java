@@ -27,7 +27,7 @@ public class PERSON_DIRECTORY_UI extends javax.swing.JPanel {
         detailsJPanel.setVisible(false);
         if (Person_Directory.allPeople.isEmpty()) {
             uploadedJList.setModel(model);
-            JOptionPane.showMessageDialog(this, "People Directory Empty!", "View Details", ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(this, "Person Directory Empty!", "View Details", ERROR_MESSAGE);
         } else {
             Person_Directory.allPeople.forEach(car -> {
                 model.addElement(car.personId + " - " + car.name);
@@ -80,11 +80,15 @@ public class PERSON_DIRECTORY_UI extends javax.swing.JPanel {
         uploadedJList = new javax.swing.JList<>();
         jLabel16 = new javax.swing.JLabel();
 
+        setBackground(new java.awt.Color(153, 204, 255));
+
         jLabel1.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Person Directory");
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+
+        detailsJPanel.setBackground(new java.awt.Color(153, 204, 255));
 
         jLabel2.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
         jLabel2.setText("Name:");
@@ -260,7 +264,7 @@ public class PERSON_DIRECTORY_UI extends javax.swing.JPanel {
 
         jSplitPane1.setRightComponent(jPanel1);
 
-        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel2.setBackground(new java.awt.Color(153, 204, 255));
 
         uploadedJList.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
@@ -347,7 +351,7 @@ public class PERSON_DIRECTORY_UI extends javax.swing.JPanel {
             detailsJPanel.setVisible(true);
             identifierJLabel.setText(String.valueOf(selectedPerson.personId));
             nameJLabel.setText(String.valueOf(selectedPerson.name));
-            addressJLabel.setText("94 CALUMET STREET");
+            addressJLabel.setText("94 Calumet Street");
             zipCodeJLabel.setText(String.valueOf(selectedPerson.address.zipcode));
             cityJLabel.setText(String.valueOf(selectedPerson.city.city));
             stateJLabel.setText(String.valueOf(selectedPerson.city.state));

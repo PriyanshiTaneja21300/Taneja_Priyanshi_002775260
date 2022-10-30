@@ -46,7 +46,7 @@ public class PATIENT_DIRECTORY extends javax.swing.JPanel {
         encounterJPanel.setVisible(false);
         if (Patient_Directory.patientDirectory.isEmpty()) {
             uploadedJList.setModel(model);
-            JOptionPane.showMessageDialog(this, "People Directory Empty!", "View Details", ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(this, "Patient Directory Empty!", "View Details", ERROR_MESSAGE);
         } else {
             Patient_Directory.patientDirectory.forEach(patient -> {
                 model.addElement(patient.patientIdentifier + " - " + patient.personDetails.name);
@@ -117,7 +117,7 @@ public class PATIENT_DIRECTORY extends javax.swing.JPanel {
         uploadedJList = new javax.swing.JList<>();
         jLabel17 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(255, 255, 255));
+        setBackground(new java.awt.Color(153, 204, 255));
 
         jLabel1.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -125,7 +125,7 @@ public class PATIENT_DIRECTORY extends javax.swing.JPanel {
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
-        peresonJPanel.setBackground(new java.awt.Color(255, 255, 255));
+        peresonJPanel.setBackground(new java.awt.Color(153, 204, 255));
 
         jLabel2.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
         jLabel2.setText("Name:");
@@ -268,7 +268,7 @@ public class PATIENT_DIRECTORY extends javax.swing.JPanel {
                     .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
 
-        encounterJPanel.setBackground(new java.awt.Color(255, 255, 255));
+        encounterJPanel.setBackground(new java.awt.Color(153, 204, 255));
 
         jLabel12.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
         jLabel12.setText("Date:");
@@ -369,7 +369,7 @@ public class PATIENT_DIRECTORY extends javax.swing.JPanel {
 
         jSplitPane1.setRightComponent(jPanel1);
 
-        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel2.setBackground(new java.awt.Color(153, 204, 255));
 
         jLabel16.setFont(new java.awt.Font("Lucida Grande", 1, 14)); // NOI18N
         jLabel16.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -492,7 +492,7 @@ public class PATIENT_DIRECTORY extends javax.swing.JPanel {
             selectedPerson = Patient_Directory.patientDirectory.get(seletedPersonIndex);
             identifierJLabel.setText(String.valueOf(selectedPerson.personDetails.personId));
             nameJLabel.setText(String.valueOf(selectedPerson.personDetails.name));
-            addressJLabel.setText(String.valueOf(selectedPerson.personDetails.address));
+            addressJLabel.setText("94 Calumet Street");
             zipCodeJLabel.setText(String.valueOf(selectedPerson.personDetails.address.zipcode));
             cityJLabel.setText(String.valueOf(selectedPerson.personDetails.city.city));
             stateJLabel.setText(String.valueOf(selectedPerson.personDetails.city.state));

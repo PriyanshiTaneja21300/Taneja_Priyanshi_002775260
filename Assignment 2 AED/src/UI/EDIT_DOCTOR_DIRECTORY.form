@@ -53,63 +53,71 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="118" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="seatsJLabel7" min="-2" max="-2" attributes="0"/>
-                          <Component id="cardentifierJLabel" alignment="1" min="-2" max="-2" attributes="0"/>
-                          <Component id="seatsJLabel6" alignment="1" min="-2" max="-2" attributes="0"/>
-                          <Component id="seatsJLabel5" alignment="1" min="-2" max="-2" attributes="0"/>
-                          <Component id="maintenanceExpiryJLabel" alignment="1" min="-2" max="-2" attributes="0"/>
-                          <Component id="seatsJLabel4" alignment="1" min="-2" max="-2" attributes="0"/>
-                          <Component id="seatsJLabel3" alignment="1" min="-2" max="-2" attributes="0"/>
-                          <Component id="seatsJLabel2" alignment="1" min="-2" max="-2" attributes="0"/>
-                          <Component id="seatsJLabel1" alignment="1" min="-2" max="-2" attributes="0"/>
-                          <Component id="seatsJLabel" alignment="1" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace max="-2" attributes="0"/>
+                  <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
-                              <Component id="dobDayJField" min="-2" pref="37" max="-2" attributes="0"/>
-                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Component id="dummyJField3" min="-2" pref="22" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="118" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="1" attributes="0">
+                                  <Component id="seatsJLabel7" min="-2" max="-2" attributes="0"/>
+                                  <Component id="cardentifierJLabel" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="seatsJLabel6" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="seatsJLabel5" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="maintenanceExpiryJLabel" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="seatsJLabel4" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="seatsJLabel3" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="seatsJLabel2" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="seatsJLabel1" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="seatsJLabel" alignment="1" min="-2" max="-2" attributes="0"/>
+                              </Group>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="dobMonthJField" min="-2" pref="41" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="dummyJField2" min="-2" pref="19" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="dobYearJField" min="-2" pref="52" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="dobDayJField" min="-2" pref="37" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="dummyJField3" min="-2" pref="22" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="dobMonthJField" min="-2" pref="41" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="dummyJField2" min="-2" pref="19" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="dobYearJField" min="-2" pref="52" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="dummyJField4" min="-2" pref="32" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="dummyJField5" min="-2" pref="18" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="phoneNoJField1" min="-2" pref="43" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="dummyJField6" min="-2" pref="15" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="phoneNoJField2" min="-2" pref="41" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="dummyJField7" min="-2" pref="17" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="phoneNoJField3" min="-2" pref="52" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="personIdentifierJLabel" min="-2" pref="300" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="jButton2" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                                      <Component id="emailJField" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="communityJComboBox" alignment="0" pref="302" max="32767" attributes="0"/>
+                                      <Component id="stateJField" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="cityJComboBox" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="zipJField" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="addressJField" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="nameJField" alignment="0" max="32767" attributes="0"/>
+                                  </Group>
+                              </Group>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
-                              <Component id="dummyJField4" min="-2" pref="32" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="dummyJField5" min="-2" pref="18" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="phoneNoJField1" min="-2" pref="43" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="dummyJField6" min="-2" pref="15" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="phoneNoJField2" min="-2" pref="41" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="dummyJField7" min="-2" pref="17" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="phoneNoJField3" min="-2" pref="52" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="personIdentifierJLabel" min="-2" pref="300" max="-2" attributes="0"/>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="jButton1" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="jButton2" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
-                              <Component id="emailJField" alignment="0" max="32767" attributes="0"/>
-                              <Component id="communityJComboBox" alignment="0" pref="302" max="32767" attributes="0"/>
-                              <Component id="stateJField" alignment="0" max="32767" attributes="0"/>
-                              <Component id="cityJComboBox" alignment="0" max="32767" attributes="0"/>
-                              <Component id="zipJField" alignment="0" max="32767" attributes="0"/>
-                              <Component id="addressJField" alignment="0" max="32767" attributes="0"/>
-                              <Component id="nameJField" alignment="0" max="32767" attributes="0"/>
+                              <EmptySpace min="-2" pref="339" max="-2" attributes="0"/>
+                              <Component id="jButton3" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace pref="236" max="32767" attributes="0"/>
@@ -181,7 +189,9 @@
                           <Component id="jButton1" alignment="3" min="-2" pref="39" max="-2" attributes="0"/>
                           <Component id="jButton2" alignment="3" min="-2" pref="39" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="207" max="32767" attributes="0"/>
+                      <EmptySpace pref="102" max="32767" attributes="0"/>
+                      <Component id="jButton3" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="70" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -676,6 +686,14 @@
               <AuxValues>
                 <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
               </AuxValues>
+            </Component>
+            <Component class="javax.swing.JButton" name="jButton3">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="LOGOUT"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton3ActionPerformed"/>
+              </Events>
             </Component>
           </SubComponents>
         </Container>

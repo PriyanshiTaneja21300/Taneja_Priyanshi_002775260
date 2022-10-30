@@ -47,8 +47,8 @@ public class DOCTOR_VIEW extends javax.swing.JPanel {
         encounterJList.setVisible(false);
         encounterJPanel.setVisible(false);
         if (Doctor_Directory.doctorDirectory.isEmpty()) {
-            encounterJList.setModel(model);
-            JOptionPane.showMessageDialog(this, "People Directory Empty!", "View Details", ERROR_MESSAGE);
+            uploadedJList.setModel(model);
+            JOptionPane.showMessageDialog(this, "Doctor Directory Is Empty!", "View Details", ERROR_MESSAGE);
         } else {
             Doctor_Directory.doctorDirectory.forEach(doctor -> {
                 model.addElement(doctor.doctorIdentifier + " - " + doctor.personDetails.name);
@@ -57,8 +57,8 @@ public class DOCTOR_VIEW extends javax.swing.JPanel {
                     System.out.println(doctor.doctorIdentifier + "Doctors directory" + sel.visitDate + "-" + sel.findings.hospitalName);
                 }
             });
-            encounterJList.setModel(model);
-            encounterJList.setSelectedIndex(0);
+            uploadedJList.setModel(model);
+            uploadedJList.setSelectedIndex(0);
             try {
                 openSelectedProfile();
             } catch (ParseException ex) {
@@ -118,7 +118,7 @@ public class DOCTOR_VIEW extends javax.swing.JPanel {
         uploadedJList = new javax.swing.JList<>();
         jLabel17 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(255, 255, 255));
+        setBackground(new java.awt.Color(153, 204, 255));
 
         jLabel1.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -429,7 +429,7 @@ public class DOCTOR_VIEW extends javax.swing.JPanel {
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jSplitPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 557, Short.MAX_VALUE)))
+                    .addComponent(jSplitPane1)))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -463,14 +463,14 @@ public class DOCTOR_VIEW extends javax.swing.JPanel {
     }//GEN-LAST:event_uploadedJListMouseClicked
 
    private void openSelectedEncounter() {
-        int seletedPersonIndex = encounterJList.getSelectedIndex();
+         int seletedPersonIndex = encounterJList.getSelectedIndex();
         if (seletedPersonIndex != -1) {
             Appointment history = selectedPerson.allAppointmentsHistory.AppointmentHistory.get(seletedPersonIndex);
             encounterJPanel.setVisible(true);
-            jLabel12.setText(String.valueOf(history.visitDate));
-            jLabel_Hospital_Name.setText(String.valueOf(history.findings.hospitalName));
-            jLabel_Specialization.setText(String.valueOf(history.findings.specialization));
-            jLabel_Total_Experience.setText(String.valueOf(history.findings.totalExperience));
+            dateJLabel.setText(String.valueOf(history.visitDate));
+            respiratoryRateJLabel.setText(String.valueOf(history.findings.hospitalName));
+            heartRateJLabel.setText(String.valueOf(history.findings.specialization));
+            ageJLabel.setText(String.valueOf(history.findings.totalExperience));
         }
     }
 
@@ -490,8 +490,8 @@ public class DOCTOR_VIEW extends javax.swing.JPanel {
             mobileNoJLabel.setText(String.valueOf(selectedPerson.personDetails.mobileNo));
 
             DefaultListModel model = new DefaultListModel();
-            selectedPerson.allAppointmentsHistory.AppointmentHistory.forEach(patient -> {
-                model.addElement(patient.visitDate);
+            selectedPerson.allAppointmentsHistory.AppointmentHistory.forEach(doctor -> {
+                model.addElement(doctor.visitDate);
             });
             encounterJList.setModel(model);
             encounterJList.setSelectedIndex(0);
