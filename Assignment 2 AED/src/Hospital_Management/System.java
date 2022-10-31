@@ -1,7 +1,10 @@
 
 package Hospital_Management;
 
-
+/**
+ *
+ * @author PRIYANSHI TANEJA
+ */
 public class System {
 
     /**

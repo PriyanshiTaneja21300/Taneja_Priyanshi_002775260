@@ -3,7 +3,10 @@ package Hospital_Management;
 
 import java.util.ArrayList;
 
-
+/**
+ *
+ * @author PRIYANSHI TANEJA
+ */
 public class City {
     public static String[] cityValues = {"Boston", "Chelsea", "Cambridge", "Somerville", "Everett", "Malden"};
     public static ArrayList<Community> allCities = new ArrayList<>();

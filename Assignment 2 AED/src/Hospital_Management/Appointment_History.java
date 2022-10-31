@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author SHREYA TANEJA
+ * @author PRIYANSHI TANEJA
  */
 public class Appointment_History {
     public ArrayList<Appointment> AppointmentHistory = new ArrayList<>();

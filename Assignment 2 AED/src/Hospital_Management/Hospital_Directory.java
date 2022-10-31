@@ -6,7 +6,7 @@ package Hospital_Management;
 
 /**
  *
- * @author SHREYA TANEJA
+ * @author PRIYANSHI TANEJA
  */
 public class Hospital_Directory {
     

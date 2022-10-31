@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author SHREYA TANEJA
+ * @author PRIYANSHI TANEJA
  */
 public class Patient_Directory {
 

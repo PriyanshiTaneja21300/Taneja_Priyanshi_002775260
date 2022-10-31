@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author SHREYA TANEJA
+ * @author PRIYANSHI TANEJA
  */
 public class Doctor_Directory {
     public static ArrayList<Doctor> doctorDirectory = new ArrayList<>();

@@ -11,7 +11,7 @@ import java.util.Date;
 
 /**
  *
- * @author SHREYA TANEJA
+ * @author PRIYANSHI TANEJA
  */
 public class Person {
 

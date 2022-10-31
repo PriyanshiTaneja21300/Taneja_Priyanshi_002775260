@@ -8,7 +8,7 @@ import java.util.Date;
 
 /**
  *
- * @author SHREYA TANEJA
+ * @author PRIYANSHI TANEJA
  */
 public class Community extends City {
 
@@ -29,7 +29,7 @@ public class Community extends City {
         return isValid;
     }
     
-    public Boolean alreadtExists(String city, String community) {
+    public Boolean alreadyExists(String city, String community) {
         Boolean found = false;
         for (int i = 0; i < City.allCities.size(); i++) {
             if (city.equals(City.allCities.get(i).city) && community.equals(City.allCities.get(i).communityName)) {
