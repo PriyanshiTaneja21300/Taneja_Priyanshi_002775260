@@ -342,7 +342,7 @@ ADD_COMMUNITY cityCommunityDashbaord = new ADD_COMMUNITY();
         String communityErrorMessage = selectedCommunity.validateCommunityName(communityJField.getText());
         errorMessage += communityErrorMessage;
 
-        if (selectedCommunity.alreadtExists(cityJComboBox.getSelectedItem().toString(), communityJField.getText())) {
+        if (selectedCommunity.alreadyExists(cityJComboBox.getSelectedItem().toString(), communityJField.getText())) {
             errorMessage += "Community already registered with the selected City \n";
         }
         if (errorMessage.length() != 0) {

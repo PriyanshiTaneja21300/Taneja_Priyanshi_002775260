@@ -232,7 +232,7 @@ public class ADD_COMMUNITY extends javax.swing.JPanel {
         String communityErrorMessage = community.validateCommunityName(communityJField.getText());
         errorMessage += communityErrorMessage;
 
-        if (community.alreadtExists(cityJComboBox.getSelectedItem().toString(), communityJField.getText())) {
+        if (community.alreadyExists(cityJComboBox.getSelectedItem().toString(), communityJField.getText())) {
             errorMessage += "Community already registered with the selected City \n";
         }
         if (errorMessage.length() != 0) {

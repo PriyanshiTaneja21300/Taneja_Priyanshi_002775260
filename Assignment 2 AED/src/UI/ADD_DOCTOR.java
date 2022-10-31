@@ -142,7 +142,7 @@ public class ADD_DOCTOR extends javax.swing.JPanel {
             }
         });
 
-        jLabel17.setText("Person identifier:");
+        jLabel17.setText("Doctor Identifier:");
 
         jLabel18.setText("Name:");
 
