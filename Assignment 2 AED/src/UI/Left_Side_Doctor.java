@@ -36,27 +36,16 @@ public class Left_Side_Doctor extends javax.swing.JPanel {
     private void initComponents() {
 
         jLabel_Heading = new javax.swing.JLabel();
-        jButton_PATIENT_DIRECTORY = new javax.swing.JButton();
         jButton_EDIT_PERSON_DIRECTORY = new javax.swing.JButton();
         jButton_ADD_ENCOUNTER = new javax.swing.JButton();
         jButton_PERSON_DIRECTORY1 = new javax.swing.JButton();
-        jButton_EDIT_PERSON_DIRECTORY1 = new javax.swing.JButton();
-        jButton_ADD_DOCTOR = new javax.swing.JButton();
+        jButton_PERSON_DIRECTORY = new javax.swing.JButton();
 
         setBackground(new java.awt.Color(153, 204, 255));
         setBorder(javax.swing.BorderFactory.createEmptyBorder(10, 15, 10, 15));
 
         jLabel_Heading.setFont(new java.awt.Font("Noto Sans Oriya", 2, 14)); // NOI18N
         jLabel_Heading.setText("Doctor Tools");
-
-        jButton_PATIENT_DIRECTORY.setBackground(new java.awt.Color(242, 242, 242));
-        jButton_PATIENT_DIRECTORY.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        jButton_PATIENT_DIRECTORY.setText("Patient Directory");
-        jButton_PATIENT_DIRECTORY.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_PATIENT_DIRECTORYActionPerformed(evt);
-            }
-        });
 
         jButton_EDIT_PERSON_DIRECTORY.setBackground(new java.awt.Color(242, 242, 242));
         jButton_EDIT_PERSON_DIRECTORY.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
@@ -85,21 +74,12 @@ public class Left_Side_Doctor extends javax.swing.JPanel {
             }
         });
 
-        jButton_EDIT_PERSON_DIRECTORY1.setBackground(new java.awt.Color(242, 242, 242));
-        jButton_EDIT_PERSON_DIRECTORY1.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        jButton_EDIT_PERSON_DIRECTORY1.setText("Edit Vital Signs");
-        jButton_EDIT_PERSON_DIRECTORY1.addActionListener(new java.awt.event.ActionListener() {
+        jButton_PERSON_DIRECTORY.setBackground(new java.awt.Color(242, 242, 242));
+        jButton_PERSON_DIRECTORY.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        jButton_PERSON_DIRECTORY.setText("Person Directory");
+        jButton_PERSON_DIRECTORY.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_EDIT_PERSON_DIRECTORY1ActionPerformed(evt);
-            }
-        });
-
-        jButton_ADD_DOCTOR.setBackground(new java.awt.Color(242, 242, 242));
-        jButton_ADD_DOCTOR.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        jButton_ADD_DOCTOR.setText("Add Vital Signs");
-        jButton_ADD_DOCTOR.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_ADD_DOCTORActionPerformed(evt);
+                jButton_PERSON_DIRECTORYActionPerformed(evt);
             }
         });
 
@@ -112,22 +92,13 @@ public class Left_Side_Doctor extends javax.swing.JPanel {
                 .addComponent(jLabel_Heading)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addGroup(layout.createSequentialGroup()
-                            .addContainerGap()
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                .addComponent(jButton_EDIT_PERSON_DIRECTORY, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 215, Short.MAX_VALUE)
-                                .addComponent(jButton_PATIENT_DIRECTORY, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jButton_ADD_ENCOUNTER, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                        .addGroup(layout.createSequentialGroup()
-                            .addContainerGap()
-                            .addComponent(jButton_ADD_DOCTOR, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton_EDIT_PERSON_DIRECTORY1, javax.swing.GroupLayout.DEFAULT_SIZE, 215, Short.MAX_VALUE)
-                            .addComponent(jButton_PERSON_DIRECTORY1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 215, Short.MAX_VALUE))))
+                        .addComponent(jButton_EDIT_PERSON_DIRECTORY, javax.swing.GroupLayout.DEFAULT_SIZE, 215, Short.MAX_VALUE)
+                        .addComponent(jButton_ADD_ENCOUNTER, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jButton_PERSON_DIRECTORY1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 215, Short.MAX_VALUE)
+                    .addComponent(jButton_PERSON_DIRECTORY, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -138,23 +109,14 @@ public class Left_Side_Doctor extends javax.swing.JPanel {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton_ADD_ENCOUNTER, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton_PATIENT_DIRECTORY, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jButton_PERSON_DIRECTORY, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton_EDIT_PERSON_DIRECTORY, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton_ADD_DOCTOR, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton_EDIT_PERSON_DIRECTORY1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton_PERSON_DIRECTORY1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(118, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
-
-    private void jButton_PATIENT_DIRECTORYActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_PATIENT_DIRECTORYActionPerformed
-     PATIENT_DIRECTORY patientViewEditDashbaord = new PATIENT_DIRECTORY();
-        this.jSplitMainPane.setRightComponent(patientViewEditDashbaord);
-    }//GEN-LAST:event_jButton_PATIENT_DIRECTORYActionPerformed
 
     private void jButton_EDIT_PERSON_DIRECTORYActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_EDIT_PERSON_DIRECTORYActionPerformed
         EDIT_PERSON_DIRECTORY adminViewEditDashbaord = new EDIT_PERSON_DIRECTORY();
@@ -166,28 +128,21 @@ public class Left_Side_Doctor extends javax.swing.JPanel {
         this.jSplitMainPane.setRightComponent(patientVisitDashbaord);
     }//GEN-LAST:event_jButton_ADD_ENCOUNTERActionPerformed
 
-    private void jButton_EDIT_PERSON_DIRECTORY1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_EDIT_PERSON_DIRECTORY1ActionPerformed
-        EDIT_DOCTOR_DIRECTORY EditDoctor = new EDIT_DOCTOR_DIRECTORY();
-        this.jSplitMainPane.setRightComponent(EditDoctor);
-    }//GEN-LAST:event_jButton_EDIT_PERSON_DIRECTORY1ActionPerformed
-
     private void jButton_PERSON_DIRECTORY1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_PERSON_DIRECTORY1ActionPerformed
           DOCTOR_VIEW doctorDirectoryDashbaord = new DOCTOR_VIEW();
         this.jSplitMainPane.setRightComponent(doctorDirectoryDashbaord);
     }//GEN-LAST:event_jButton_PERSON_DIRECTORY1ActionPerformed
 
-    private void jButton_ADD_DOCTORActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_ADD_DOCTORActionPerformed
-  ADD_DOCTOR newDoctor = new ADD_DOCTOR();
-        this.jSplitMainPane.setRightComponent(newDoctor);         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_ADD_DOCTORActionPerformed
+    private void jButton_PERSON_DIRECTORYActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_PERSON_DIRECTORYActionPerformed
+        PERSON_DIRECTORY_UI adminViewDashboard = new PERSON_DIRECTORY_UI();
+        this.jSplitMainPane.setRightComponent(adminViewDashboard);
+    }//GEN-LAST:event_jButton_PERSON_DIRECTORYActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton_ADD_DOCTOR;
     private javax.swing.JButton jButton_ADD_ENCOUNTER;
     private javax.swing.JButton jButton_EDIT_PERSON_DIRECTORY;
-    private javax.swing.JButton jButton_EDIT_PERSON_DIRECTORY1;
-    private javax.swing.JButton jButton_PATIENT_DIRECTORY;
+    private javax.swing.JButton jButton_PERSON_DIRECTORY;
     private javax.swing.JButton jButton_PERSON_DIRECTORY1;
     private javax.swing.JLabel jLabel_Heading;
     // End of variables declaration//GEN-END:variables

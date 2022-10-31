@@ -53,8 +53,8 @@
                   <Group type="102" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jButton_PERSON_DIRECTORY1" max="32767" attributes="0"/>
-                          <Component id="jButton_EDIT_PERSON_DIRECTORY1" alignment="0" pref="215" max="32767" attributes="0"/>
+                          <Component id="jButton_PERSON_DIRECTORY1" pref="215" max="32767" attributes="0"/>
+                          <Component id="jButton_EDIT_PERSON_DIRECTORY1" alignment="0" max="32767" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
@@ -65,29 +65,29 @@
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
               <Component id="jLabel_Heading" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="jButton_ADD_CITY" min="-2" pref="50" max="-2" attributes="0"/>
+              <Component id="jButton_ADD_CITY" min="-2" pref="38" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="jButton_ADD_PERSON" min="-2" pref="50" max="-2" attributes="0"/>
+              <Component id="jButton_ADD_PERSON" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="jButton_ADD_ENCOUNTER" min="-2" pref="50" max="-2" attributes="0"/>
+              <Component id="jButton_ADD_ENCOUNTER" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="jButton_PERSON_DIRECTORY" min="-2" pref="50" max="-2" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
-              <Component id="jButton_PATIENT_DIRECTORY" min="-2" pref="50" max="-2" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
-              <Component id="jButton_EDIT_PERSON_DIRECTORY" min="-2" pref="50" max="-2" attributes="0"/>
+              <Component id="jButton_PERSON_DIRECTORY" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Component id="jButton_UPDATE_CITY" min="-2" pref="50" max="-2" attributes="0"/>
+              <Component id="jButton_PATIENT_DIRECTORY" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="jButton_ADD_DOCTOR" min="-2" pref="50" max="-2" attributes="0"/>
+              <Component id="jButton_EDIT_PERSON_DIRECTORY" min="-2" pref="38" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="jButton_PERSON_DIRECTORY1" min="-2" pref="50" max="-2" attributes="0"/>
+              <Component id="jButton_UPDATE_CITY" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="jButton_EDIT_PERSON_DIRECTORY1" min="-2" pref="50" max="-2" attributes="0"/>
-              <EmptySpace pref="16" max="32767" attributes="0"/>
+              <Component id="jButton_ADD_DOCTOR" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jButton_PERSON_DIRECTORY1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jButton_EDIT_PERSON_DIRECTORY1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="186" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>

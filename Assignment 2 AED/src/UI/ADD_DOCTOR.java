@@ -525,7 +525,7 @@ public class ADD_DOCTOR extends javax.swing.JPanel {
             detailsPanel.setVisible(true);
             identifierLabel.setText(String.valueOf(chosenPerson.personId));
             nameLabel.setText(String.valueOf(chosenPerson.name));
-            addressLabel.setText(String.valueOf(chosenPerson.address));
+            addressLabel.setText(String.valueOf(chosenPerson.address.address));
             zipLabel.setText(String.valueOf(chosenPerson.address.zipcode));
             cityLabel.setText(String.valueOf(chosenPerson.city.city));
             stateLabel.setText(String.valueOf(chosenPerson.city.state));

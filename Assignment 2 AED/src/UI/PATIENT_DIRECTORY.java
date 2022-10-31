@@ -492,7 +492,7 @@ public class PATIENT_DIRECTORY extends javax.swing.JPanel {
             selectedPerson = Patient_Directory.patientDirectory.get(seletedPersonIndex);
             identifierJLabel.setText(String.valueOf(selectedPerson.personDetails.personId));
             nameJLabel.setText(String.valueOf(selectedPerson.personDetails.name));
-            addressJLabel.setText("94 Calumet Street");
+            addressJLabel.setText(String.valueOf(selectedPerson.personDetails.address.address));
             zipCodeJLabel.setText(String.valueOf(selectedPerson.personDetails.address.zipcode));
             cityJLabel.setText(String.valueOf(selectedPerson.personDetails.city.city));
             stateJLabel.setText(String.valueOf(selectedPerson.personDetails.city.state));
