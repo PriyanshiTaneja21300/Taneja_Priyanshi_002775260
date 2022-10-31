@@ -22,7 +22,7 @@ import static javax.swing.JOptionPane.INFORMATION_MESSAGE;
 
 /**
  *
- * @author prathameshnemade
+ * @author PRIYANSHI TANEJA
  */
 public class ADD_PATIENT extends javax.swing.JPanel {
 

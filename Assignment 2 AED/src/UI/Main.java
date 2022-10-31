@@ -4,6 +4,8 @@
  */
 package UI;
 
+import Hospital_Management.Doctor;
+import Hospital_Management.Doctor_Directory;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
@@ -21,7 +23,7 @@ import static javax.swing.JOptionPane.ERROR_MESSAGE;
 
 /**
  *
- * @author SHREYA TANEJA
+ * @author PRIYANSHI TANEJA
  */
 public class Main extends javax.swing.JFrame {
 
@@ -29,12 +31,12 @@ public class Main extends javax.swing.JFrame {
      * Creates new form MainJFrame
      */
     public static ArrayList<System> adminLists = new ArrayList<System>();
-    
+     Doctor_Directory doctorDirectory;
     public Main() {
          parseJSON("\\Users\\PRIYANSHI TANEJA\\Desktop\\Assignment04\\src\\ui\\AuthenticationConfig.json");
         initComponents();
         LOGOUT_BUTTON.setVisible(false);
-        
+         this.doctorDirectory = new Doctor_Directory();
     }
 
     /**
@@ -123,7 +125,7 @@ public class Main extends javax.swing.JFrame {
         Logging_For2.setFont(new java.awt.Font("Rockwell", 0, 18)); // NOI18N
         Logging_For2.setText("Logging For");
 
-        Choose2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Choose", "Admin", "Doctor", "Patient" }));
+        Choose2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Admin", "Doctor", "Community Admin", "Patient" }));
         Choose2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Choose2ActionPerformed(evt);
@@ -249,7 +251,7 @@ public class Main extends javax.swing.JFrame {
             else {
                JOptionPane.showMessageDialog(this, "Login Unsuccessful");      }*/
         
-        if (Enter_Password2 != null && User_Name2 != null) {
+        if (Enter_Password2 != null && User_Name2 != null && Choose2.getSelectedItem().toString()=="Admin") {
             Boolean found = false;
             for (System admin : Main.adminLists) {
                 if (admin.getPassword().equals(Enter_Password2.getText()) && admin.name.equals(User_Name2.getText())) {
@@ -263,15 +265,74 @@ public class Main extends javax.swing.JFrame {
                    jSplitPane1.setRightComponent(adminDashboard);
                    LOGOUT_BUTTON.setVisible(true);
                 }
+                
             }
+        }
+            
+            if (Enter_Password2 != null && User_Name2 != null && Choose2.getSelectedItem().toString()=="Community Admin") {
+            Boolean found = false;
+            for (System admin : Main.adminLists) {
+                if (admin.getPassword().equals(Enter_Password2.getText()) && admin.name.equals(User_Name2.getText())) {
+                    found = true;
+                    JOptionPane.showMessageDialog(this, "Community logged in", "Login Successful", ERROR_MESSAGE);
+                    //AdminDashboard adminDashboard = new AdminDashboard();
+                    Left_Side_Community_Admin adminOptions = new Left_Side_Community_Admin(jSplitPane1, jPanel2, jPanel1);
+                    //jSplitPane.setRightComponent(adminDashboard);
+                   jSplitPane1.setLeftComponent(adminOptions);
+                    ADD_COMMUNITY adminDashboard = new ADD_COMMUNITY();
+                   jSplitPane1.setRightComponent(adminDashboard);
+                   LOGOUT_BUTTON.setVisible(true);
+                }
+                
+                
+            }
+            
+            }
+            
+            if (Enter_Password2 != null && User_Name2 != null && Choose2.getSelectedItem().toString()=="Patient") {
+            Boolean found = false;
+            for (System admin : Main.adminLists) {
+                if (admin.getPassword().equals(Enter_Password2.getText()) && admin.name.equals(User_Name2.getText())) {
+                    found = true;
+                    JOptionPane.showMessageDialog(this, "Patient logged in", "Login Successful", ERROR_MESSAGE);
+                    //AdminDashboard adminDashboard = new AdminDashboard();
+                    Left_Side_Patient adminOptions = new Left_Side_Patient(jSplitPane1, jPanel2, jPanel1);
+                    //jSplitPane.setRightComponent(adminDashboard);
+                   jSplitPane1.setLeftComponent(adminOptions);
+                    PATIENT_DIRECTORY patientViewEditDashbaord = new PATIENT_DIRECTORY();
+                   jSplitPane1.setRightComponent(patientViewEditDashbaord);
+                   LOGOUT_BUTTON.setVisible(true);
+                }
+                
+                
+            }}
+            if (Enter_Password2 != null && User_Name2 != null && Choose2.getSelectedItem().toString()=="Doctor") {
+            Boolean found = false;
+            for (System admin : Main.adminLists) {
+                if (admin.getPassword().equals(Enter_Password2.getText()) && admin.name.equals(User_Name2.getText())) {
+                    found = true;
+                    JOptionPane.showMessageDialog(this, "Doctor logged in", "Login Successful", ERROR_MESSAGE);
+                    //AdminDashboard adminDashboard = new AdminDashboard();
+                    Left_Side_Doctor adminOptions5 = new Left_Side_Doctor(jSplitPane1, jPanel2, jPanel1);
+                    //jSplitPane.setRightComponent(adminDashboard);
+                   jSplitPane1.setLeftComponent(adminOptions5);
+                    ADD_PATIENT patientVisitDashbaord = new ADD_PATIENT();
+        jSplitPane1.setRightComponent(patientVisitDashbaord);
+                   LOGOUT_BUTTON.setVisible(true);
+                }
+                
+                
+            }
+            
+            
             if (!found) {
                 JOptionPane.showMessageDialog(this, "Invalid Username or Password!", "Login", ERROR_MESSAGE);
             } /*else {
                 logoutJButton.setVisible(true);
             }*/
-        } else {
+        } /*else {
             JOptionPane.showMessageDialog(this, "Username or Password requried.", "Login", ERROR_MESSAGE);
-        }
+        } */
         
     }//GEN-LAST:event_Login_Button2ActionPerformed
 
@@ -285,7 +346,7 @@ public class Main extends javax.swing.JFrame {
     }//GEN-LAST:event_Choose2ActionPerformed
 
     private void LOGOUT_BUTTONActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LOGOUT_BUTTONActionPerformed
-LOGOUT_BUTTON.setVisible(false);
+LOGOUT_BUTTON.setVisible(true);
         jSplitPane1.setRightComponent(jPanel1);
          jSplitPane1.setDividerLocation((int) (0 * (new Dimension(Toolkit.getDefaultToolkit().getScreenSize()).width)));        // TODO add your handling code here:
     }//GEN-LAST:event_LOGOUT_BUTTONActionPerformed

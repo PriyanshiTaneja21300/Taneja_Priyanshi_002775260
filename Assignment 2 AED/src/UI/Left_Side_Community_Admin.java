@@ -4,7 +4,10 @@ package UI;
 import javax.swing.JPanel;
 import javax.swing.JSplitPane;
 
-
+/**
+ *
+ * @author PRIYANSHI TANEJA
+ */
 public class Left_Side_Community_Admin extends javax.swing.JPanel {
 
     public JSplitPane jSplitMainPane;

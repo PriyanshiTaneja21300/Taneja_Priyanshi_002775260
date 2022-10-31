@@ -26,7 +26,7 @@ import static javax.swing.JOptionPane.INFORMATION_MESSAGE;
 
 /**
  *
- * @author anshulsingh
+ * @author PRIYANSHI TANEJA
  */
 public class ADD_DOCTOR extends javax.swing.JPanel {
     

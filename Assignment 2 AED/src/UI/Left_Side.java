@@ -4,7 +4,10 @@ package UI;
 import javax.swing.JPanel;
 import javax.swing.JSplitPane;
 
-
+/**
+ *
+ * @author PRIYANSHI TANEJA
+ */
 public class Left_Side extends javax.swing.JPanel {
 
     public JSplitPane jSplitMainPane;
@@ -195,7 +198,7 @@ public class Left_Side extends javax.swing.JPanel {
                 .addComponent(jButton_PERSON_DIRECTORY1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton_EDIT_PERSON_DIRECTORY1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(99, Short.MAX_VALUE))
+                .addContainerGap(16, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 

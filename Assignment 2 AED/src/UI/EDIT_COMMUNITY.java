@@ -22,7 +22,7 @@ import javax.swing.JSplitPane;
 
 /**
  *
- * @author prathameshnemade
+ * @author PRIYANSHI TANEJA
  */
 public class EDIT_COMMUNITY extends javax.swing.JPanel {
 

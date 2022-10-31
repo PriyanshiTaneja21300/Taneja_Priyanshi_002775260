@@ -78,22 +78,16 @@
                               <Component id="dobMonthJField" min="-2" pref="51" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="dobYearJField" min="-2" pref="52" max="-2" attributes="0"/>
-                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                           </Group>
                           <Group type="102" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" attributes="0">
-                                      <Component id="seatsJLabel5" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Component id="emailJField" min="-2" pref="202" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" attributes="0">
-                                      <Component id="seatsJLabel4" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Component id="communityJComboBox" min="-2" pref="158" max="-2" attributes="0"/>
-                                  </Group>
-                              </Group>
-                              <EmptySpace min="0" pref="250" max="32767" attributes="0"/>
+                              <Component id="seatsJLabel5" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="emailJField" min="-2" pref="202" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <Component id="seatsJLabel4" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="communityJComboBox" min="-2" pref="158" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
@@ -116,9 +110,9 @@
                               <Component id="phoneNoJField3" min="-2" pref="52" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                   </Group>
               </Group>
+              <EmptySpace min="0" pref="250" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -179,17 +173,19 @@
                   </Group>
               </Group>
               <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="dummyJField4" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
-                  <Component id="dummyJField5" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
-                  <Component id="phoneNoJField1" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
-                  <Component id="dummyJField6" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
-                  <Component id="phoneNoJField2" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
-                  <Component id="dummyJField7" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
-                  <Component id="phoneNoJField3" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
                       <Component id="seatsJLabel6" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="dummyJField4" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
+                      <Component id="dummyJField5" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
+                      <Component id="phoneNoJField1" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
+                      <Component id="dummyJField6" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
+                      <Component id="phoneNoJField2" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
+                      <Component id="dummyJField7" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
+                      <Component id="phoneNoJField3" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>

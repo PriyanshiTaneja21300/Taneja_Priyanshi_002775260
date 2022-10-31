@@ -11,7 +11,10 @@ import static javax.swing.JOptionPane.ERROR_MESSAGE;
 import static javax.swing.JOptionPane.INFORMATION_MESSAGE;
 import javax.swing.table.DefaultTableModel;
 
-
+/**
+ *
+ * @author PRIYANSHI TANEJA
+ */
 public class ADD_COMMUNITY extends javax.swing.JPanel {
 
     /**
